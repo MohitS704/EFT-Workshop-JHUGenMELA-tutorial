@@ -8,6 +8,7 @@ Install JHUGenMELA by doing the following
 ```shell
 cmsrel CMSSW_14_0_0
 cd CMSSW_14_0_0/src/
+cmsenv
 git clone https://github.com/MohitS704/EFT-Workshop-JHUGenMELA-tutorial.git
 cd JHUGenMELA/
 ./setup.sh

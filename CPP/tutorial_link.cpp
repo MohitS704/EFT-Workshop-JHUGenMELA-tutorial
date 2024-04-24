@@ -22,9 +22,9 @@ int main(int argc, char const *argv[])
 {
     Mela m = Mela(13, 125, TVar::SILENT);
 
-    string data_path = "../SAMPLE_DATA/EWSample_4l.root";
+    // string data_path = "../SAMPLE_DATA/EWSample_4l.root";
     string data_path = "../SAMPLE_DATA/ggHSample_4l.root";
-    TFile* dataFile = TFile::Open(data_path);
+    TFile* dataFile = TFile::Open(data_path.c_str());
 
     TTreeReader myReader("eventTree", dataFile);
 
